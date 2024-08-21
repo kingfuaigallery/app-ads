@@ -3,37 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool GIF</title>
+    <title>My Portfolio</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
         }
         .container {
-            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
         }
-        .gif {
-            max-width: 100%;
-            height: auto;
-            border: 3px solid #333;
-            border-radius: 10px;
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #333;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        h1 {
+        .summary {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .project {
+            width: 30%;
+            margin: 20px 0;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 20px;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+        h1, h2 {
             color: #333;
-            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Check Out This Cool GIF!</h1>
-        <img src="https://media.giphy.com/media/l0MYR0gGgJtU3sdrS/giphy.gif" alt="Cool GIF" class="gif">
+        <header>
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+            <h1>Your Name</h1>
+            <p class="summary">
+                Hi, I'm Long Nguyen, a Software Developer specializing in Android development. 
+                I create beautiful and functional websites and applications. Here are a few projects I've worked on:
+            </p>
+        </header>
+        <section class="projects">
+            <div class="project">
+                <h2>Project 1</h2>
+                <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                <p>A brief description of Project 1. Explain what you did, technologies used, and any notable features.</p>
+            </div>
+            <div class="project">
+                <h2>Project 2</h2>
+                <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                <p>A brief description of Project 2. Explain what you did, technologies used, and any notable features.</p>
+            </div>
+            <div class="project">
+                <h2>Project 3</h2>
+                <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                <p>A brief description of Project 3. Explain what you did, technologies used, and any notable features.</p>
+            </div>
+        </section>
     </div>
 </body>
 </html>
