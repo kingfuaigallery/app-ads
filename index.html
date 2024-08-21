@@ -6,10 +6,10 @@
     <title>My Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f4f4f9;
             color: #333;
         }
         .container {
@@ -19,42 +19,70 @@
         }
         header {
             text-align: center;
-            padding: 50px 0;
+            padding: 40px 0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
         }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 5px solid #333;
+            border: 5px solid #007BFF;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #007BFF;
+            margin: 0;
+            font-size: 2.5em;
         }
         .summary {
-            margin: 20px 0;
-            text-align: center;
-            font-size: 1.2em;
+            margin: 20px auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 800px;
+            color: #555;
         }
         .projects {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
         .project {
-            width: 30%;
-            margin: 20px 0;
-            text-align: center;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: calc(33.333% - 20px);
+            margin: 10px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            text-align: center;
             padding: 20px;
         }
         .project img {
             max-width: 100%;
-            border-radius: 10px;
+            border-radius: 8px;
             height: auto;
         }
-        h1, h2 {
-            color: #333;
+        h2 {
+            color: #007BFF;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        p {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+            .project {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .project {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -64,28 +92,27 @@
             <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
             <h1>Your Name</h1>
             <p class="summary">
-                Hi, I'm Long Nguyen, a Software Developer specializing in Android development. 
-                I create beautiful and functional websites and applications. Here are a few projects I've worked on:
+                Welcome to my portfolio! I'm [Your Name], a [Your Profession] with a passion for [Your Specialization]. 
+                I create innovative solutions and beautiful designs. Explore some of my featured projects below.
             </p>
         </header>
         <section class="projects">
             <div class="project">
                 <h2>Project 1</h2>
                 <img src="https://via.placeholder.com/400x300" alt="Project 1">
-                <p>A brief description of Project 1. Explain what you did, technologies used, and any notable features.</p>
+                <p>This is a brief description of Project 1. Highlight the key features, technologies used, and what makes it special.</p>
             </div>
             <div class="project">
                 <h2>Project 2</h2>
                 <img src="https://via.placeholder.com/400x300" alt="Project 2">
-                <p>A brief description of Project 2. Explain what you did, technologies used, and any notable features.</p>
+                <p>This is a brief description of Project 2. Explain what you did, the technologies used, and any notable achievements.</p>
             </div>
             <div class="project">
                 <h2>Project 3</h2>
                 <img src="https://via.placeholder.com/400x300" alt="Project 3">
-                <p>A brief description of Project 3. Explain what you did, technologies used, and any notable features.</p>
+                <p>This is a brief description of Project 3. Share what the project is about, the tools and skills applied, and its impact.</p>
             </div>
         </section>
     </div>
 </body>
 </html>
-
